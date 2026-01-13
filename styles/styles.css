@@ -1,0 +1,84 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Circular+Std+Book&family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #000; 
+}
+::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* --- THE PINK VOLUME SLIDER --- */
+input[type=range] {
+    -webkit-appearance: none; /* Hides standard slider */
+    background: transparent;
+    cursor: pointer;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+/* The Track (Background Bar) */
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: #333; /* Dark Gray when not active */
+    border-radius: 2px;
+    transition: background 0.2s;
+}
+
+/* The Thumb (The Circle) - NOW PINK */
+input[type=range]::-webkit-slider-thumb {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #F8C8DC; /* <--- PINK THUMB */
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px; /* Centers thumb on track */
+    box-shadow: 0 0 10px rgba(248, 200, 220, 0.5); /* Pink Glow */
+    transition: transform 0.1s;
+}
+
+/* Scale up thumb slightly on hover */
+input[type=range]:hover::-webkit-slider-thumb {
+    transform: scale(1.2);
+}
+
+/* Make the track Pink when hovering the group */
+.group:hover input[type=range]::-webkit-slider-runnable-track {
+    background: rgba(248, 200, 220, 0.3); 
+}
+
+/* --- RECORD SPIN ANIMATION --- */
+.record-spin {
+  animation-name: spin;
+  animation-duration: 2s; 
+  animation-timing-function: linear; 
+  animation-iteration-count: infinite; 
+}
+.record-stop {
+  animation-name: none !important; /* Force the animation to stop */
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* End at 360 degrees (a full circle) */
+  }
+}

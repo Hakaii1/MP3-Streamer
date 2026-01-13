@@ -1,0 +1,771 @@
+{
+    "slots": [
+        {
+            "id": "slot_693f9e9570544",
+            "time": "00:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693f9ebba8852",
+            "time": "00:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693f9ee7ed07b",
+            "time": "00:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693f9f91e8918",
+            "time": "00:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693f9fd988cc8",
+            "time": "01:00",
+            "title": "Sanitize and Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fa01be81da",
+            "time": "01:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fa03a746e9",
+            "time": "01:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fa0bfebe55",
+            "time": "01:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fa0d49065e",
+            "time": "02:00",
+            "title": "Sanitize and Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fa1632c31d",
+            "time": "14:00",
+            "title": "Sanitize and Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fa177dbeba",
+            "time": "02:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fa191e96c6",
+            "time": "14:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fa1c59370b",
+            "time": "14:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fa1db56d8f",
+            "time": "14:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fa1f883e16",
+            "time": "15:00",
+            "title": "Sanitize and Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fa240c7fe2",
+            "time": "15:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fa26848c75",
+            "time": "15:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fa29d547d4",
+            "time": "15:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fa2c9a97e3",
+            "time": "16:00",
+            "title": "Sanitize and Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fa2e53bf42",
+            "time": "16:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fa315be7f4",
+            "time": "16:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fa355a4dfd",
+            "time": "16:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fa36835ab1",
+            "time": "17:00",
+            "title": "Sanitize and Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb2535f2e5",
+            "time": "17:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb29e4f07b",
+            "time": "17:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb2b85c768",
+            "time": "17:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb2de82f63",
+            "time": "18:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb3e07ca36",
+            "time": "18:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb553d38e0",
+            "time": "18:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb5681fc39",
+            "time": "18:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb583e2e92",
+            "time": "19:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb5991ddb7",
+            "time": "19:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb5ceaa64c",
+            "time": "19:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb5e4db1e1",
+            "time": "19:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb603b45d8",
+            "time": "20:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb61b196a9",
+            "time": "20:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb63c7ba6b",
+            "time": "20:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb657bf6ae",
+            "time": "20:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb6773c971",
+            "time": "21:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb69613410",
+            "time": "21:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb6bbad447",
+            "time": "21:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb6cb3fda5",
+            "time": "21:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb6e4958bf",
+            "time": "22:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb6f6af42a",
+            "time": "22:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb72c7f891",
+            "time": "22:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb74761fad",
+            "time": "22:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb76179e1f",
+            "time": "23:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb77dd5a0f",
+            "time": "23:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb7a55d7b5",
+            "time": "23:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb7c0100b2",
+            "time": "23:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fb7f34422d",
+            "time": "02:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb81a88f9b",
+            "time": "02:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb837adc8f",
+            "time": "03:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb85df1faa",
+            "time": "03:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb87513519",
+            "time": "03:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb883ea408",
+            "time": "03:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb8bde44ec",
+            "time": "04:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb8d41cf42",
+            "time": "04:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb8df976fd",
+            "time": "04:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb8f03c2b4",
+            "time": "04:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb92441a66",
+            "time": "05:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb93e72a8e",
+            "time": "05:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb953b1803",
+            "time": "05:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb9790ce0a",
+            "time": "05:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb98d475c5",
+            "time": "06:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb9aa2269f",
+            "time": "06:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb9c81aa7b",
+            "time": "06:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb9d7db6e7",
+            "time": "06:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fb9ece9ed3",
+            "time": "07:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fba00c8389",
+            "time": "07:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fba11eb3a4",
+            "time": "07:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fba23e6f68",
+            "time": "08:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fba3055fa6",
+            "time": "08:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fba39c407c",
+            "time": "08:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fba4b4b24b",
+            "time": "08:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fba6641333",
+            "time": "09:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fba78cd326",
+            "time": "09:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fba84a6874",
+            "time": "09:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fbab7a362b",
+            "time": "09:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fbac3f041d",
+            "time": "10:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fbad84a0e5",
+            "time": "10:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fbb0272839",
+            "time": "10:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fbb1104bf6",
+            "time": "10:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fbb2970a2b",
+            "time": "11:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fbb4b8dbf0",
+            "time": "11:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-13"
+        },
+        {
+            "id": "slot_693fbb5ae178c",
+            "time": "11:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fbb67411c6",
+            "time": "11:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fbb8618a45",
+            "time": "12:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fbba152e68",
+            "time": "12:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fbbb1bddf2",
+            "time": "12:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fbbbe90801",
+            "time": "12:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fbbda4ad28",
+            "time": "13:00",
+            "title": "Sanitize & Check",
+            "file": "hello everybody with  fallin hair2.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fbbe8583ee",
+            "time": "13:15",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fbc09317e7",
+            "time": "13:30",
+            "title": "Sanitize",
+            "file": "hello everybody(Chime) revised3.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        },
+        {
+            "id": "slot_693fbc19bbdb9",
+            "time": "13:45",
+            "title": "Food Policy",
+            "file": "Food Policy (1) new.mp3",
+            "enabled": true,
+            "last_fired": "2026-01-12"
+        }
+    ],
+    "last_event": {
+        "id": "a_6965b8b403184",
+        "slot_id": "slot_693fbb4b8dbf0",
+        "title": "Food Policy",
+        "file": "Food Policy (1) new.mp3",
+        "fired_at": 1768274100
+    }
+}
