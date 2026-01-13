@@ -350,7 +350,7 @@
             "title": "Food Policy",
             "file": "Food Policy (1) new.mp3",
             "enabled": true,
-            "last_fired": "2026-01-12"
+            "last_fired": "2026-01-13"
         },
         {
             "id": "slot_693fb72c7f891",
@@ -762,10 +762,10 @@
         }
     ],
     "last_event": {
-        "id": "a_6965b8b403184",
-        "slot_id": "slot_693fbb4b8dbf0",
-        "title": "Food Policy",
+        "id": "a_69665664150ef",
+        "slot_id": "slot_69665664122be",
+        "title": "asdfasf",
         "file": "Food Policy (1) new.mp3",
-        "fired_at": 1768274100
+        "fired_at": 1768314468
     }
 }

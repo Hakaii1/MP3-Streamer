@@ -149,7 +149,13 @@ function handleAlarmEvent(evt) {
 function finishAlarm() { 
     document.getElementById('hostAlarmBanner').classList.add('hidden'); 
     alarmAudio.pause(); 
-    if (wasPlayingBeforeAlarm) playIndex(currentIndex, snapshotTime); 
+    // The Client (client.php) handles resuming music. Host should just update UI.
+    if (wasPlayingBeforeAlarm) {
+        // Optional: Just unpause visually without forcing a track change
+        isPlaying = true; 
+        updatePlayIcon();
+        sendAction('global', 'play'); // Simple resume command, NO track change
+    }
 }
 alarmAudio.onended = finishAlarm; 
 document.getElementById('hostAlarmBannerClose').onclick = finishAlarm;
