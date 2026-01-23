@@ -13,7 +13,8 @@ $alarmsFile = __DIR__ . '/alarms.json';
 $chimesDir  = __DIR__ . '/chimes';
 
 // Helper: Open file with Exclusive Lock (prevents overwriting/race conditions)
-function withAlarmsLock($file, callable $callback) {
+function withAlarmsLock($file, callable $callback)
+{
     $fp = fopen($file, 'c+'); // Open for reading and writing
     if (!$fp) {
         // Fallback if file cannot be opened
@@ -45,23 +46,25 @@ function withAlarmsLock($file, callable $callback) {
             fwrite($fp, json_encode($newData, JSON_PRETTY_PRINT));
             fflush($fp);
         }
-        
+
         $result = $newData;
         flock($fp, LOCK_UN); // Release lock
     }
-    
+
     fclose($fp);
     return $result;
 }
 
-function isAllowedChime($filename) {
+function isAllowedChime($filename)
+{
     if (!$filename) return false;
     if (strpos($filename, '..') !== false) return false;
     $ext = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
-    return in_array($ext, ['mp3','wav','ogg','m4a'], true);
+    return in_array($ext, ['mp3', 'wav', 'ogg', 'm4a'], true);
 }
 
-function chimeExists($chimesDir, $filename) {
+function chimeExists($chimesDir, $filename)
+{
     $path = realpath($chimesDir . DIRECTORY_SEPARATOR . $filename);
     $realBase = realpath($chimesDir);
     return ($path && $realBase && strpos($path, $realBase) === 0 && file_exists($path));
@@ -71,7 +74,9 @@ function chimeExists($chimesDir, $filename) {
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // Read-only access doesn't strictly need a write lock, but consistency helps
-    $data = withAlarmsLock($alarmsFile, function($d) { return $d; });
+    $data = withAlarmsLock($alarmsFile, function ($d) {
+        return $d;
+    });
     echo json_encode($data);
     exit;
 }
@@ -82,8 +87,8 @@ if (!is_array($body)) $body = [];
 $action = $body['action'] ?? '';
 
 // WRAP ALL WRITE ACTIONS IN THE LOCK
-$finalData = withAlarmsLock($alarmsFile, function($alarms) use ($action, $body, $chimesDir) {
-    
+$finalData = withAlarmsLock($alarmsFile, function ($alarms) use ($action, $body, $chimesDir) {
+
     if ($action === 'create') {
         $time  = trim((string)($body['time'] ?? ''));
         $title = trim((string)($body['title'] ?? ''));
@@ -92,7 +97,21 @@ $finalData = withAlarmsLock($alarmsFile, function($alarms) use ($action, $body, 
         if (!preg_match('/^\d{2}:\d{2}$/', $time)) return $alarms; // Invalid time
         if ($title === '' || !$file) return $alarms; // Invalid data
         if (!isAllowedChime($file)) return $alarms;
-        if (!chimeExists($chimesDir, $file)) return $alarms;
+        if (!isAllowedChime($file)) return $alarms;
+
+        // Validation: Check if file exists in Chimes OR TTS
+        $isValidFile = false;
+        if (chimeExists($chimesDir, $file)) {
+            $isValidFile = true;
+        } elseif (strpos($file, 'tts/') === 0) {
+            $ttsPath = realpath(__DIR__ . '/' . $file);
+            $ttsRoot = realpath(__DIR__ . '/tts');
+            if ($ttsPath && $ttsRoot && strpos($ttsPath, $ttsRoot) === 0 && file_exists($ttsPath)) {
+                $isValidFile = true;
+            }
+        }
+
+        if (!$isValidFile) return $alarms;
 
         // Generate ID
         $newId = uniqid('slot_');
@@ -129,9 +148,12 @@ $finalData = withAlarmsLock($alarmsFile, function($alarms) use ($action, $body, 
         $id = (string)($body['id'] ?? '');
         $slot = null;
         foreach ($alarms['slots'] as $s) {
-            if (($s['id'] ?? '') === $id) { $slot = $s; break; }
+            if (($s['id'] ?? '') === $id) {
+                $slot = $s;
+                break;
+            }
         }
-        
+
         if ($slot) {
             $alarms['last_event'] = [
                 'id' => uniqid('evt_'),
@@ -144,6 +166,45 @@ $finalData = withAlarmsLock($alarmsFile, function($alarms) use ($action, $body, 
         return $alarms;
     }
 
+    // --- NEW: Trigger Immediate Event (e.g. Announce Now) ---
+    if ($action === 'trigger') {
+        $title = trim((string)($body['title'] ?? 'Announcement'));
+        $file  = trim((string)($body['file'] ?? ''));
+
+        // Basic validation
+        if (!$file) return $alarms;
+
+        // Security Check: File must exist in valid locations
+        $isValid = false;
+
+        // Check 1: In Chimes Dir
+        if (chimeExists($chimesDir, $file)) {
+            $isValid = true;
+        }
+        // Check 2: In TTS Dir (if file starts with tts/)
+        elseif (strpos($file, 'tts/') === 0) {
+            // Path construction: __DIR__ is api root. tts/ is relative to root.
+            // We need to resolve it safely.
+            $ttsPath = realpath(__DIR__ . '/' . $file);
+            $ttsRoot = realpath(__DIR__ . '/tts');
+            if ($ttsPath && $ttsRoot && strpos($ttsPath, $ttsRoot) === 0 && file_exists($ttsPath)) {
+                $isValid = true;
+            }
+        }
+
+        if (!$isValid) return $alarms;
+
+        // Force the event
+        $alarms['last_event'] = [
+            'id' => uniqid('evt_'),
+            'slot_id' => 'immediate', // Marker for non-scheduled
+            'title' => $title,
+            'file' => $file,
+            'fired_at' => time()
+        ];
+        return $alarms;
+    }
+
     return $alarms; // No change
 });
 
@@ -152,4 +213,3 @@ if ($finalData) {
 } else {
     echo json_encode(['ok' => false, 'error' => 'Operation failed']);
 }
-?>

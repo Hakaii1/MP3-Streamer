@@ -23,6 +23,14 @@ if (strpos($file, '..') !== false) {
 
 $baseDir = $isAlarm ? $chimesDir : $musicDir;
 
+// Detect TTS file request
+if (strpos($file, 'tts/') === 0) {
+    $ttsDir = __DIR__ . '/tts';
+    $baseDir = $ttsDir;
+    // Remove "tts/" prefix for file lookup inside the directory
+    $file = substr($file, 4);
+}
+
 // Allowed file types
 $allowedExt = $isAlarm
     ? ['mp3', 'wav', 'ogg', 'm4a']
@@ -72,7 +80,7 @@ $httpCode = 200;
 if (isset($_SERVER['HTTP_RANGE'])) {
     $httpCode = 206; // Partial Content
     $range = $_SERVER['HTTP_RANGE'];
-    
+
     // Parse the range (e.g., "bytes=1000000-")
     if (preg_match('/bytes=(\d*)-(\d*)/', $range, $matches)) {
         $start = (int)$matches[1];
@@ -114,7 +122,7 @@ while (!feof($handle) && $bytesSent < $length) {
     $readSize = min($chunkSize, $length - $bytesSent);
     echo fread($handle, $readSize);
     $bytesSent += $readSize;
-    
+
     // Flush the output buffer
     if (@ob_get_level() > 0) {
         @ob_flush();

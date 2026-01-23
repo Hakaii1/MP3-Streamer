@@ -1,11 +1,11 @@
 {
     "global": {
-        "track": "Lil Kasalanan Shortie.mp3",
-        "status": "playing",
+        "track": "Eminem ft Rihanna - Love the way you lieLYRICS.mp3",
+        "status": "paused",
         "volume": 0.19,
         "updated_at": 0,
-        "start_ts": 1768314510.215817,
-        "pause_seek": 13.08620309829712,
+        "start_ts": 1769136167.945708,
+        "pause_seek": 56.87744998931885,
         "queue": [
             "Avicii - Hey Brother - AviciiOfficialVEVO.mp3",
             "Avicii - The Nights - AviciiOfficialVEVO.mp3",
@@ -56,15 +56,15 @@
         ]
     },
     "clients": {
-        "dev_xn3hbdcjy": {
-            "last_seen": 1768314584,
-            "name": "Kobe Test",
-            "diff": 0.0133,
-            "track": "Lil Kasalanan Shortie.mp3",
-            "status": "playing",
-            "start_ts": 1768314510.215817,
-            "pause_seek": 13.08620309829712,
-            "volume": 0.19
+        "dev_jvpl54cit": {
+            "last_seen": 1769136358,
+            "name": "Kobe Test 1",
+            "diff": 0,
+            "track": "Eminem ft Rihanna - Love the way you lieLYRICS.mp3",
+            "status": "paused",
+            "start_ts": 1769136167.945708,
+            "pause_seek": 56.87744998931885,
+            "volume": 1
         }
     }
 }
